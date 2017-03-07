@@ -1,4 +1,9 @@
-//import React, {Component} from 'react';
+import React, {Component} from 'react';
 
-//import {selector, reducer} from './code/reducer';
-System.import('code/treeShake')
+import {Modal} from './code/library';
+
+(function(){
+    console.log(Modal);
+})();
+
+export default null;

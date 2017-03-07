@@ -32,8 +32,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new BundleAnalyzerPlugin({
-            analyzerMode: 'static'
-        })
+        // new BundleAnalyzerPlugin({
+        //     analyzerMode: 'static'
+        // })
     ]
 };
