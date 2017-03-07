@@ -1,3 +1,4 @@
-import React, {Component} from 'react';
+//import React, {Component} from 'react';
 
-import {selector, reducer} from './code/reducer';
+//import {selector, reducer} from './code/reducer';
+System.import('code/treeShake')
