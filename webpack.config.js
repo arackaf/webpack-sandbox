@@ -32,8 +32,18 @@ module.exports = {
         ]
     },
     plugins: [
-        // new BundleAnalyzerPlugin({
-        //     analyzerMode: 'static'
-        // })
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'static'
+        }),
+
+        new webpack.optimize.CommonsChunkPlugin({
+            async: 'book-modal-helpers',
+            minChunks(module, count) {
+                var context = module.context;
+                var targets = ['react-autosuggest', 'react-autowhatever']
+                return context && 
+                        (context.indexOf('node_modules') >= 0 && targets.find(t => new RegExp('\\\\' + t + '\\\\', 'i').test(context)));
+            },
+        })
     ]
 };

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "react": "15.1.0",
+    "react-autosuggest": "^9.0.0",
     "react-dom": "0.14.0",
     "redux": "3.0.4",
     "redux-thunk": "1.0.0",

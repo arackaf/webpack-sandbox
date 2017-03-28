@@ -1,10 +1,13 @@
-webpackJsonp([1],{
+webpackJsonp([1],[
+/* 0 */,
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/***/ 3:
-/***/ (function(module, exports) {
-
-(function () {})();
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony default export */ __webpack_exports__["default"] = function () {
+    return 'Hello';
+};
 
 /***/ })
-
-});
+]);
