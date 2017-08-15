@@ -1,12 +1,12 @@
-webpackJsonp([0],{
+webpackJsonp([0],[
+/* 0 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/***/ 2:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 4));
-__webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 5));
-__webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 6));
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony default export */ __webpack_exports__["default"] = ({
+    value: 1
+});
 
 /***/ })
-
-});
+]);
