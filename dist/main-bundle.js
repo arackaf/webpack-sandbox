@@ -150,25 +150,27 @@
 /***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
+let arr = [
+    __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 0)),
+    __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 1)),
+    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 2))
+];
 let moduleId = /*require.resolve*/(0);
 let moduleId2 = /*require.resolve*/(1);
 let moduleId3 = /*require.resolve*/(2);
 
 if (+new Date() < 0){  //it won't be
-    __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 0));
-    __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 1));
-    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 2));
 } else {
     debugger;
-    __webpack_require__.e(moduleId).then(() => __webpack_require__(moduleId)).then(({default: res}) => {
+    __webpack_require__(moduleId).then(({default: res}) => {
         debugger
     });
 
-    __webpack_require__.e(moduleId2).then(() => __webpack_require__(moduleId2)).then(({default: res}) => {
+    __webpack_require__(moduleId2).then(({default: res}) => {
         debugger
     });    
 
-    __webpack_require__.e(moduleId3).then(() => __webpack_require__(moduleId3)).then(({default: res}) => {
+    __webpack_require__(moduleId3).then(({default: res}) => {
         debugger
     });    
 
