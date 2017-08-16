@@ -29,7 +29,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		1: 0
+/******/ 		3: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "-chunk.js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"util-three","1":"util-two","2":"util"}[chunkId]||chunkId) + "-chunk.js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -142,31 +142,42 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */
+/******/ ({
+
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 let moduleId = /*require.resolve*/(0);
+let moduleId2 = /*require.resolve*/(1);
+let moduleId3 = /*require.resolve*/(2);
 
 if (+new Date() < 0){  //it won't be
-    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 0)).then(({default: obj}) => {
-    });
+    __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 0));
+    __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 1));
+    __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 2));
 } else {
     debugger;
-    let p = __webpack_require__(moduleId);
-    p.then(res => {
-        debugger;
-    })
-
-    __webpack_require__.e/* import() */(0).then(() => __webpack_require__(1)).then(({default: obj}) => {
-        console.log(obj);
-        //__webpack_require__.bind(null, 1)
+    __webpack_require__.e(moduleId).then(() => __webpack_require__(moduleId)).then(({default: res}) => {
+        debugger
     });
+
+    __webpack_require__.e(moduleId2).then(() => __webpack_require__(moduleId2)).then(({default: res}) => {
+        debugger
+    });    
+
+    __webpack_require__.e(moduleId3).then(() => __webpack_require__(moduleId3)).then(({default: res}) => {
+        debugger
+    });    
+
+    // __webpack_require__.e/* import() */(0).then(() => __webpack_require__(1)).then(({default: obj}) => {
+    //     console.log(obj);
+    //     //__webpack_require__.bind(null, 1)
+    // });
 }
 
 /***/ })
-/******/ ]);
+
+/******/ });
